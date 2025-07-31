@@ -174,7 +174,8 @@ with torch.no_grad():
     print(f'Predicted: "{predicted}", Actual: "{actual}"')
   ```
  ### 运行结果
- ![输入图片说明](https://github.com/Lily-923/focus/blob/main/28523413c674af421b6b8ccb8566942.jpg) 
+ 
+ ![Image](https://github.com/user-attachments/assets/964de321-9e7c-4029-a28b-b8cf377db212)
  
 ## numpy代码
 ```
