@@ -175,7 +175,7 @@ with torch.no_grad():
   ```
  ### 运行结果
  
- ![Image](https://github.com/user-attachments/assets/964de321-9e7c-4029-a28b-b8cf377db212)
+![Image](https://github.com/user-attachments/assets/9b10829d-6286-48b7-81dc-2234ad040ea4)
  
 ## numpy代码
 ```
