@@ -271,7 +271,9 @@ if __name__ == "__main__":
     print(f"训练准确率: {accuracy:.2f}")
  ```
 ### 运行结果
-![输入图片说明](/imgs/2025-07-30/ANDTYLVm2wcWOnn1.jpeg)
+
+![Image](https://github.com/user-attachments/assets/7c5816fd-ee83-45)
+
 ## cpp神经网络
 ### 代码
 ```
@@ -447,17 +449,21 @@ return 0;
 }
 ```
 ### 运行结果
-![输入图片说明](/imgs/2025-07-30/74yu3n5mYCwCqErX.jpeg)
+
+![Image](https://github.com/user-attachments/assets/ddfcdf86-d318-4ef8-bc75-6b621f621d18)
+
 ## 神经网络架构图
-![输入图片说明](/imgs/2025-07-30/5nbqdR0UNQip4RYQ.jpeg)
+
+![Image](https://github.com/user-attachments/assets/b0c60768-98af-4097-ba36-4c81f223bef8)
+
 ## 使用简单的数据集训练
 ### 调整noise的大小
 numpy神经网络模型不同噪声的结果
-![输入图片说明](/imgs/2025-07-30/4PxFfqVicq8Denee.jpeg)
+![Image](https://github.com/user-attachments/assets/5fd78bf4-0a2c-400f-aa92-d25aacc033e8)
 
+![Image](https://github.com/user-attachments/assets/71cd784d-1c64-4448-a088-f07ccb09e775)
 
-![输入图片说明](/imgs/2025-07-30/FSgvNHi0FINjGm9a.jpeg)
-![输入图片说明](/imgs/2025-07-30/STzxSjuoylaFdweB.jpeg)
+![Image](https://github.com/user-attachments/assets/bc6e2d53-6c56-434f-8aaa-b564ed5edb4e)
 ### 用matplotlib将数据集可视化并用数学层面表达
 ![输图片说明](/imgs/2025-07-30/1cdonlRVsudyfoZy.png)
 假设我们有一个数据集D，他由N个样本组成，每个样本包含D个特征和一个二分类标签。特征矩阵X表示每一个样本的特征向量，标签向量Y表示对应样本的分类标签。在上面的代码中，D=2.（二维特征空间）N=100（100个样本）。
@@ -518,7 +524,9 @@ def update_parameters(W1, b1, W2, b2, dW1, db1, dW2, db2, learning_rate):
 ### 6. 迭代训练：重复前向传播、计算损失、反向传播和更新参数的过程，直到模型性能满意或达到预设的训练轮数。
 ## 输出训练损失下降曲线和分类准确率
 在训练过程中记录每个迭代的损失值和准确率，然后使用matplotlib绘制曲线
-![输入图片说明](/imgs/2025-07-31/90DUutgDuDVllTrd.png)
+
+![Image](https://github.com/user-attachments/assets/9d8e2962-51c1-4334-9dc7-8a9745b73c48)
+
 ## 模型推理结果可视化
 ### 模型的输出表示的应该是这个样本属于每个类别的概率值，所有类别（这里是2个）的概率值加起来为1（你是通过什么手段保证这一点的？如果有更多类呢？）
 - 在上面的二分类任务中，使用了sigmoid函数作为输出层的激活函数。激活函数将输出值映射到[0,1]区间，表示样品属于类别1的概率，由于二分类问题中只有两个类别，所以类别二的概率可以表示为**1-sigmoid(z)**,所以两个概率之和自然为1.
@@ -530,7 +538,9 @@ def update_parameters(W1, b1, W2, b2, dW1, db1, dW2, db2, learning_rate):
   return e_z/e_z.sum(axis=0,keepdims=Ture)
   ```
 ### 用matliptlib将推理结果可视化
-![输入图片说明](/imgs/2025-07-31/JyBJpOr149foJZRf.png)
+
+![Image](https://github.com/user-attachments/assets/6fbcd158-1aac-4fa6-b1cc-4da37087d3f9)
+
 ## 对比Pytorch,numpy,cpp神经网络的训练/推理速度，分析原因（底层原理，硬件应用）
 - Pytorch训练推理速度较快，其提供了自动微分功能和动态计算图，反向传播时可自动生成梯度计算流程，无需手动实现；Pytorch内置对GPU的支持能将张量计算和模型训练高效地部署在GPU上，加快了训练和推理速度，适用于深度学习的快速开发。
 - Numpy训练速度较慢，其主要用于科学计算，没有深度学习专用功能，且本身不支持GPU加速，适用于传统的科学计算和数据分析任务，或者深度学习的简单原型设计，小规模实验。
