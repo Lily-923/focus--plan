@@ -173,7 +173,7 @@ with torch.no_grad():
     predicted, actual = classes[pred[0].argmax(0)], classes[y]  
     print(f'Predicted: "{predicted}", Actual: "{actual}"')
   ```
- ###运行结果![输入图片说明](/imgs/2025-07-30/64RoR7B4OUX5iHWV.jpeg) 
+ ###运行结果![输入图片说明](https://github.com/Lily-923/focus/blob/main/28523413c674af421b6b8ccb8566942.jpg) 
  
 ## numpy代码
 ```
