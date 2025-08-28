@@ -131,7 +131,8 @@ def depthFirstSearch(problem: Any) -> List[Any]:
 
 自动评分测试：
 
-![输入图片说明](/imgs/2025-08-24/2KPbXmrmaTugtSPZ.png)
+
+<img width="646" height="236" alt="Q1" src="https://github.com/user-attachments/assets/bc799345-af35-456f-9060-0f95bd30b83d" />
 
 
 ### Q2：广度优先搜索（BFS）
@@ -162,11 +163,16 @@ def breadthFirstSearch(problem: Any) -> List[Any]:
    ```
 运行
 注意：如果搜索代码写得通用，修改后应能直接用于八数码问题。
-![输入图片说明](/imgs/2025-08-24/MVLMslN1CBisUOCZ.png)
-![输入图片说明](/imgs/2025-08-24/298CQWvVuROtn8Mr.png)
+<img width="625" height="437" alt="b61d997c-eb75-4bb4-bea1-bba24a4f664c" src="https://github.com/user-attachments/assets/ea3b0cd4-7ebe-4a2e-a7e1-3cee9a69b34a" />
+
+<img width="449" height="361" alt="851dade9-fc85-488f-8de8-f3b1079d129c" src="https://github.com/user-attachments/assets/862749e2-ee30-436f-bf30-7142b65b5d2b" />
+
+
+
 自动评分测试。
 
-![输入图片说明](/imgs/2025-08-24/GAvxM6UqHJZ0Jwu8.png)
+<img width="554" height="250" alt="8b720832-84fc-4ab3-ba5d-db6d3e758acd" src="https://github.com/user-attachments/assets/85c9cbb7-d306-44a9-958a-fb13482af5d6" />
+
 
 ### Q3：变化代价函数
 ```
@@ -200,7 +206,8 @@ def uniformCostSearch(problem: Any) -> List[Any]:
 运行示例：
 
 自动评分测试：
-![输入图片说明](/imgs/2025-08-24/Tk4czSIZ82UrtdfY.png)
+
+<img width="614" height="477" alt="fa37f41b-a4f9-4b70-aa48-515280381e15" src="https://github.com/user-attachments/assets/2bd5528f-7cae-48b5-93d0-71576c4f95ac" />
 
 ### Q4：A*搜索
 ```
@@ -269,4 +276,5 @@ PPO（Proximal Policy Optimization）是一种强化学习算法，可以用在�
 -   文件夹命名为“task5”，内容一并放在 GitHub 上，文件夹中应包含：
 -   **文档**：你的学习笔记、实验过程的记录、验证结果截图等。
 -   你的所有**代码**，及其 readme 文件。
+
 
