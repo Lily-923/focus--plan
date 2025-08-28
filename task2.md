@@ -154,7 +154,9 @@ CNN把一张大图拆成了局部小块，逐层抽象，节省了参数，并�
 
  # Transformer
  ## 注意力机制
- ![输入图片说明](/imgs/2025-08-04/zpYU3SPbEXFvsolb.jpeg)
+![f03b11f9-90e6-4ff6-aaba-f1213b964e5b](https://github.com/user-attachments/assets/592e0f3d-ef02-431b-8a7a-c67cb3c4587a)
+
+ 
  ### 用python实现点乘注意力机制（自注意力，交叉注意力）
  ```
 import math
@@ -414,4 +416,5 @@ def beam_search(logits_fn, sos_id, eos_id, vocab_size,
 “先学会怎么把一张清晰图拆成纯噪声，再学会怎么把纯噪声一步步拼回清晰图；学会后，我们直接给它噪声，它就能拼出全新的、像真图一样的图像。
 ## Diffusion一定是CNN吗？
 前向过程将原始数据（如图像）通过T个时间步逐渐添加高斯噪声，最终转化为纯随机噪声；反向过程则训练神经网络预测并移除噪声，从噪声中重建数据。‌‌其中去噪模型不一定是CNN，也可以是Transformer、MLP或者其他混合体。
+
 
