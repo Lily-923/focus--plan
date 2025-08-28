@@ -175,7 +175,8 @@ with torch.no_grad():
   ```
  ### 运行结果
  
-![Image](https://github.com/user-attachments/assets/9b10829d-6286-48b7-81dc-2234ad040ea4)
+![c355956e-f447-4353-8310-99df91d086af](https://github.com/user-attachments/assets/ecd8a572-8990-4606-8b96-6e57b680a445)
+
  
 ## numpy代码
 ```
@@ -271,8 +272,9 @@ if __name__ == "__main__":
     print(f"训练准确率: {accuracy:.2f}")
  ```
 ### 运行结果
+![b25542da-319e-4311-8a79-6542f58de7eb](https://github.com/user-attachments/assets/76012225-d7cc-46cc-a14c-033f217a55bf)
 
-![Image](https://github.com/user-attachments/assets/e8478f6b-58ee-4c10-be3c-0a1f6fe3ee45)
+
 
 ## cpp神经网络
 ### 代码
@@ -449,23 +451,38 @@ return 0;
 }
 ```
 ### 运行结果
+![a949783c-84d1-4539-b93f-4911732853e1](https://github.com/user-attachments/assets/5f7655d3-f6bb-4cd8-b1f5-a93985e3b671)
 
-![Image](https://github.com/user-attachments/assets/f8126ec6-e599-47fa-8aa9-d70c640b4499)
+
 
 ## 神经网络架构图
+![e0ed6348-672b-45d6-9490-affab9baeb86](https://github.com/user-attachments/assets/4c7e12bd-cf17-492e-aeea-fd2ca67af86c)
 
-![Image](https://github.com/user-attachments/assets/99b9ceb1-a355-4abe-8da8-14f2db691a5e)
+
 
 ## 使用简单的数据集训练
 ### 调整noise的大小
 numpy神经网络模型不同噪声的结果
-![Image](https://github.com/user-attachments/assets/86d0cede-0543-48cb-b481-3695f4fe2b30)
 
-![Image](https://github.com/user-attachments/assets/1b9362a0-11d1-4235-9c3b-22ed1a1bc6fa)
+![c3ce499a-028b-4e72-af03-062cd00b7e0b](https://github.com/user-attachments/assets/b2983579-f03e-4c20-af73-e42460067ba7)
 
-![Image](https://github.com/user-attachments/assets/54afaa21-589f-4307-95ce-19dade3c5056）
+
+
+![f7f5d5f0-261f-4d2b-90a6-43a530f17cdc](https://github.com/user-attachments/assets/b011e7c4-788f-4c8e-a9c5-027725047dd0)
+
+
+
+![be019e85-d96d-4be0-8f64-65cf8177e505](https://github.com/user-attachments/assets/3817c2cc-2e6e-4d4c-9941-f89c92b72c3e)
+
+
+
 ### 用matplotlib将数据集可视化并用数学层面表达
-![输图片说明](/imgs/2025-07-30/1cdonlRVsudyfoZy.png)
+
+
+
+
+
+
 假设我们有一个数据集D，他由N个样本组成，每个样本包含D个特征和一个二分类标签。特征矩阵X表示每一个样本的特征向量，标签向量Y表示对应样本的分类标签。在上面的代码中，D=2.（二维特征空间）N=100（100个样本）。
 数学上，数据集可以表示为D={（X1，Y1），（X2，Y2）........（Xn,Yn）}.
 散点图里面每个点的颜色表示其所属的类别。
@@ -523,9 +540,11 @@ def update_parameters(W1, b1, W2, b2, dW1, db1, dW2, db2, learning_rate):
    ```
 ### 6. 迭代训练：重复前向传播、计算损失、反向传播和更新参数的过程，直到模型性能满意或达到预设的训练轮数。
 ## 输出训练损失下降曲线和分类准确率
-在训练过程中记录每个迭代的损失值和准确率，然后使用matplotlib绘制曲线
+在训练过程中记录每个迭代的损失值和准确率，然后使用matplotlib绘制曲线<img width="554" height="250" alt="8b720832-84fc-4ab3-ba5d-db6d3e758acd" src="https://github.com/user-attachments/assets/89a85e0e-0449-43dd-bb44-3052805777ae" />
 
-![Image](https://github.com/user-attachments/assets/c53b3100-afda-46cc-99f0-3f022ab6d1c6)
+
+
+<img width="1000" height="500" alt="615b7edf-a932-49e8-8875-a5da9f9ea06e" src="https://github.com/user-attachments/assets/e4870163-081c-4810-ad40-50d40082f041" />
 
 ## 模型推理结果可视化
 ### 模型的输出表示的应该是这个样本属于每个类别的概率值，所有类别（这里是2个）的概率值加起来为1（你是通过什么手段保证这一点的？如果有更多类呢？）
@@ -538,8 +557,9 @@ def update_parameters(W1, b1, W2, b2, dW1, db1, dW2, db2, learning_rate):
   return e_z/e_z.sum(axis=0,keepdims=Ture)
   ```
 ### 用matliptlib将推理结果可视化
+<img width="1000" height="800" alt="56e34826-cb85-4bbc-8f1a-11bed5b2784d" src="https://github.com/user-attachments/assets/400b4f5a-f3f6-4ce2-80ee-9d1c4dbe7c73" />
 
-![Image](https://github.com/user-attachments/assets/aa39fb8c-69f5-4f6d-b10c-b36021f819fa)
+
 
 ## 对比Pytorch,numpy,cpp神经网络的训练/推理速度，分析原因（底层原理，硬件应用）
 - Pytorch训练推理速度较快，其提供了自动微分功能和动态计算图，反向传播时可自动生成梯度计算流程，无需手动实现；Pytorch内置对GPU的支持能将张量计算和模型训练高效地部署在GPU上，加快了训练和推理速度，适用于深度学习的快速开发。
