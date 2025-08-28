@@ -129,6 +129,12 @@ def depthFirstSearch(problem: Any) -> List[Any]:
    ```
 运行测试
 
+
+https://github.com/user-attachments/assets/92436331-4048-4c17-b087-4afcda1d5641
+
+
+
+
 自动评分测试：
 
 
@@ -162,6 +168,15 @@ def breadthFirstSearch(problem: Any) -> List[Any]:
     return []                        # 3) 无解
    ```
 运行
+
+
+
+https://github.com/user-attachments/assets/44361c25-e8da-4eb3-9955-3a4812ab638b
+
+
+
+
+
 注意：如果搜索代码写得通用，修改后应能直接用于八数码问题。
 <img width="625" height="437" alt="b61d997c-eb75-4bb4-bea1-bba24a4f664c" src="https://github.com/user-attachments/assets/ea3b0cd4-7ebe-4a2e-a7e1-3cee9a69b34a" />
 
@@ -204,6 +219,13 @@ def uniformCostSearch(problem: Any) -> List[Any]:
   ```
 
 运行示例：
+
+
+
+
+https://github.com/user-attachments/assets/eddf6202-20a1-4f54-8820-37e80089aef7
+
+
 
 自动评分测试：
 
@@ -251,6 +273,10 @@ def aStarSearch(problem: Any,
 示例运行：
 
 
+https://github.com/user-attachments/assets/0eba7416-8cfe-4377-8098-c5a4a2c79f56
+
+
+
 
 自动评分测试：
 
@@ -276,5 +302,6 @@ PPO（Proximal Policy Optimization）是一种强化学习算法，可以用在�
 -   文件夹命名为“task5”，内容一并放在 GitHub 上，文件夹中应包含：
 -   **文档**：你的学习笔记、实验过程的记录、验证结果截图等。
 -   你的所有**代码**，及其 readme 文件。
+
 
 
