@@ -540,8 +540,9 @@ def update_parameters(W1, b1, W2, b2, dW1, db1, dW2, db2, learning_rate):
    ```
 ### 6. 迭代训练：重复前向传播、计算损失、反向传播和更新参数的过程，直到模型性能满意或达到预设的训练轮数。
 ## 输出训练损失下降曲线和分类准确率
-在训练过程中记录每个迭代的损失值和准确率，然后使用matplotlib绘制曲线<img width="554" height="250" alt="8b720832-84fc-4ab3-ba5d-db6d3e758acd" src="https://github.com/user-attachments/assets/89a85e0e-0449-43dd-bb44-3052805777ae" />
+在训练过程中记录每个迭代的损失值和准确率，然后使用matplotlib绘制曲线
 
+<img width="800" height="600" alt="aeeff763-a8bc-4235-adbe-cdb3ccd4abd3" src="https://github.com/user-attachments/assets/c6d55ce3-ca87-4f6e-8090-0a1bc1de9b0c" />
 
 
 <img width="1000" height="500" alt="615b7edf-a932-49e8-8875-a5da9f9ea06e" src="https://github.com/user-attachments/assets/e4870163-081c-4810-ad40-50d40082f041" />
